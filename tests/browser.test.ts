@@ -1,3 +1,4 @@
+// mac
 // import { test } from "@playwright/test";
 
 // test("test browser", async ({ page }) => {
@@ -9,12 +10,14 @@
 //   await page.pause();
 // });
 
+// iPhone, iPad
 import { test, devices } from "@playwright/test";
 
 // Define the device you want to emulate
 const iPhone11 = devices["iPhone 11"];
-
-test.use({ ...iPhone11 });
+const iPadPro11 = devices["iPad Pro 11"];
+// test.use({ ...iPhone11 });
+test.use({ ...iPadPro11 });
 
 test("test browser", async ({ page }) => {
   // point this to wherever you want
